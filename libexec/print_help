@@ -1,0 +1,8 @@
+#! /usr/bin/ruby
+
+require File.expand_path('../', __FILE__) + '/file_usage_getter'
+require File.expand_path('../', __FILE__) + '/file_help_getter'
+
+puts FileUsageGetter.new(ARGV[0]).call
+puts
+puts FileHelpGetter.new(ARGV[0]).call
